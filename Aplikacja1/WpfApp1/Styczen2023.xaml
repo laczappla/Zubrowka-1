@@ -1,16 +1,12 @@
-﻿<Window x:Class="WpfApp1.MainWindow"
+﻿<Window x:Class="WpfApp1.Styczen2203"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Styczen2203" Height="450" Width="800">
     <Grid>
-        <Button Content="Styczeń 2023" Margin="68,37,68,364" Click="Button_Click"/>
-        <Button Content="Button" Margin="68,254,68,147"/>
-        <Button Content="Button" Margin="68,184,68,217"/>
-        <Button Content="Styczeń 2024&#xD;&#xA;&#xD;&#xA;" Margin="68,103,68,298"/>
-
+        
     </Grid>
 </Window>

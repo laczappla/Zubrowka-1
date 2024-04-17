@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy Styczen2203.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Styczen2203 : Window
     {
-        public MainWindow()
+        public Styczen2203()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Styczen2203 styczen_2023 = new Styczen2203();
-            styczen_2023.Show();
-
-            this.Close();
         }
     }
 }
