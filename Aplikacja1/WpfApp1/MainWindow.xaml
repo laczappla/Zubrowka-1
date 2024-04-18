@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Styczeń 2023" Margin="68,37,68,364" Click="Button_Click"/>
-        <Button Content="Button" Margin="68,254,68,147"/>
-        <Button Content="Button" Margin="68,184,68,217"/>
-        <Button Content="Styczeń 2024&#xD;&#xA;&#xD;&#xA;" Margin="68,103,68,298"/>
+        <Button Content="Styczeń 2023" Margin="68,37,68,0" Click="Button_Click" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="68,254,68,0" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="68,184,68,0" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Styczeń 2024&#xD;&#xA;&#xD;&#xA;" Margin="68,103,68,0" Height="33" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

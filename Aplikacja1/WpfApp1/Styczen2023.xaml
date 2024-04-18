@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="Styczen2203" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Left" Margin="25,32,0,185" Width="299"  >
+            <GroupBox Header="Rodzaj przesyłki" Height="189" Width="288">
+                <StackPanel Height="173" Margin="21,0,9,0" >
+                    <RadioButton Content="Pocztówka" Name="pocztowka" Margin="0,10,0,5" FontSize="20" Background="#FFE2E2E2"/>
+                    <RadioButton Content="List" Name="list" Margin="0,10,0,5" FontSize="20" Background="#FFE2E2E2"/>
+                    <RadioButton Content="Paczka" Name="paczka" Margin="0,10,0,5" FontSize="20" Background="#FFE2E2E2"/>
+                </StackPanel>
+            </GroupBox>
+            <Button Content="Sprawdź cenę" Height="27" Width="290"/>
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="136" Margin="34,278,0,0" VerticalAlignment="Top" Width="161" Source="C:\Users\student\Desktop\Zadania_3\Zadania_3\Zubrowka-1\Aplikacja1\WpfApp1\images\Fire-01-removebg-preview.png"/>
+
+
     </Grid>
 </Window>
