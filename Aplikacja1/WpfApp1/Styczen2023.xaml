@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="Styczen2203" Height="450" Width="800">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Margin="25,32,0,185" Width="299"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="629*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="241*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="25,32,0,0" HorizontalAlignment="Left" Width="299" Grid.RowSpan="3" Grid.ColumnSpan="2" Height="217" VerticalAlignment="Top"  >
             <GroupBox Header="Rodzaj przesyłki" Height="189" Width="288">
                 <StackPanel Height="173" Margin="21,0,9,0" >
                     <RadioButton Content="Pocztówka" Name="pocztowka" Margin="0,10,0,5" FontSize="20" Background="#FFE2E2E2"/>
@@ -15,9 +24,24 @@
                     <RadioButton Content="Paczka" Name="paczka" Margin="0,10,0,5" FontSize="20" Background="#FFE2E2E2"/>
                 </StackPanel>
             </GroupBox>
-            <Button Content="Sprawdź cenę" Height="27" Width="290"/>
+            <Button Content="Sprawdź cenę" Height="27" Width="290" Click="Button_Click_1"/>
         </StackPanel>
-        <Image HorizontalAlignment="Left" Height="136" Margin="34,278,0,0" VerticalAlignment="Top" Width="161" Source="C:\Users\student\Desktop\Zadania_3\Zadania_3\Zubrowka-1\Aplikacja1\WpfApp1\images\Fire-01-removebg-preview.png"/>
+        <Image HorizontalAlignment="Left" Height="101" Margin="39,61,0,0" VerticalAlignment="Top" Width="142" Source="C:\Users\student\Documents\GitHub\Zubrowka-1\Zubrowka-1\Aplikacja1\WpfApp1\images\Fire-01-removebg-preview.png" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="cena_txt" HorizontalAlignment="Left" Margin="32,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="18" FontWeight="Bold" Text="" Grid.Row="2" Grid.Column="1"/>
+        <StackPanel Margin="186,32,0,0" Grid.RowSpan="3" HorizontalAlignment="Left" Width="383" Grid.Column="1" Height="306" VerticalAlignment="Top">
+            <GroupBox Height="292" Width="369" Margin="5,5,5,5" Header="Dane Kontaktowe">
+                <StackPanel Margin="10,0,0,0" HorizontalAlignment="Left" Height="258">
+                    <TextBlock Width="329" FontSize="20"><Run Text="Ulica z numerem"/></TextBlock>
+                    <TextBox x:Name="ulica" Width="330" Height="41" FontSize="20"></TextBox>
+                    <TextBlock Width="329" FontSize="20"><Run Language="pl-pl" Text="Kod pocztowy"/></TextBlock>
+                    <TextBox x:Name="kod" Width="115" HorizontalAlignment="Left" Height="39" FontSize="20"></TextBox>
+                    <TextBlock Width="329" FontSize="20"><Run Language="pl-pl" Text="Miasto"/></TextBlock>
+                    <TextBox x:Name="miasto" Width="330" Height="36" FontSize="20"/>
+                </StackPanel>
+
+            </GroupBox>
+        </StackPanel>
+        <Button Content="Zatwierdź" HorizontalAlignment="Left" Margin="24,0,0,18" VerticalAlignment="Bottom" Width="752" Height="38" Grid.Row="2" Grid.ColumnSpan="2" Click="Button_Click_2"/>
 
 
     </Grid>
